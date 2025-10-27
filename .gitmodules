@@ -1,0 +1,6 @@
+[submodule "shikra"]
+	path = shikra
+	url = https://github.com/shikras/shikra.git
+[submodule "ml-ferret"]
+	path = ml-ferret
+	url = https://github.com/apple/ml-ferret.git
