@@ -1,15 +1,12 @@
 # %%
 import matplotlib.pyplot as plt
 import numpy as np
-import plotly.express as px
 import json
 import pandas as pd
 import os
-import io
-from tqdm import tqdm 
-import seaborn as sns
+from tqdm import tqdm  # type: ignore
 # %%
-st_data_path = "/home/aparcedo/IASEB/clustering/hcstvg12_vidvrdstg_gpt4omini_st_class_v1.csv"
+st_data_path = "/home/aparcedo/IASEB/interaction_analysis/hcstvg12_vidvrdstg_gpt4omini_st_class_v1.csv"
 st_classification_data = pd.read_csv(st_data_path)
 st_cls_data = dict(zip(
             [
@@ -143,7 +140,12 @@ def create_sunburst_chart(df, hole_radius=0.1, inner_ring_radius=0.4, outer_ring
     plt.style.use('default') 
 
     wedge_props = dict(edgecolor='w', linewidth=1.5)
-    text_props = dict(fontweight='bold', fontsize=14, ha='center', va='center')
+    text_props = dict(fontweight='normal', ha='center', va='center')
+    BASE_FONT_SIZE = 14
+    COARSE_FONTSIZE = 14
+    MIN_FONT_SIZE = 8
+    REFERENCE_ANGLE = 8
+    
 
     # --- Draw Outer Ring (fine_category, shades, thick) ---
     outer_wedges, _ = ax.pie(
@@ -163,9 +165,7 @@ def create_sunburst_chart(df, hole_radius=0.1, inner_ring_radius=0.4, outer_ring
         startangle=90,
     )
 
-    
-    # 5. --- Manual Label Styling (Radial, Bold, First Word) ---
-    
+        
     # Add labels for the inner ring (coarse_category)
     for i, p in enumerate(inner_wedges):
         ang = (p.theta2 - p.theta1) / 2. + p.theta1 
@@ -177,15 +177,18 @@ def create_sunburst_chart(df, hole_radius=0.1, inner_ring_radius=0.4, outer_ring
             rotation = ang + 180
             
         text_radius = hole_radius + (inner_ring_radius - hole_radius) / 2
-        ax.text(x * text_radius, y * text_radius,
+        ax.text(x * text_radius,
+                y * text_radius,
                 df_inner['label'][i],
                 rotation=rotation, 
-                color='white', # Inner ring is dark, so text is white
+                color='black',
+                fontsize=COARSE_FONTSIZE,
                 **text_props)
 
 
     # Add labels for the outer ring (fine_category)
     for i, p in enumerate(outer_wedges):
+        slice_angle = p.theta2 - p.theta1
         ang = (p.theta2 - p.theta1) / 2. + p.theta1
         y = np.sin(np.deg2rad(ang))
         x = np.cos(np.deg2rad(ang))
@@ -196,33 +199,27 @@ def create_sunburst_chart(df, hole_radius=0.1, inner_ring_radius=0.4, outer_ring
         
         text_radius = inner_ring_radius + (outer_ring_radius - inner_ring_radius) / 2
         
-        # Outer ring is light, so text is (mostly) black
+        # --- Existing logic for text color ---
         label_color = 'black' 
-        try:
-            # Check luminance. If it's *very* dark, use white text.
-            slice_color = outer_colors.iloc[i]
-            rgb = plt.cm.colors.to_rgb(slice_color)
-            luminance = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2])
-            if luminance < 0.4: # Dark color
-                label_color = 'white'
-        except (AttributeError, ValueError, IndexError):
-            pass # Keep default 'black'
+        scaled_fontsize = BASE_FONT_SIZE * (slice_angle / REFERENCE_ANGLE)
+        dynamic_fontsize = max(MIN_FONT_SIZE, min(scaled_fontsize, BASE_FONT_SIZE))
             
         ax.text(x * text_radius, y * text_radius,
                 df_outer['label'][i],
                 rotation=rotation, 
-                color=label_color, # Set dynamic text color
-                **text_props)
-
+                color=label_color,
+                fontsize=dynamic_fontsize,  
+                **text_props)               
     
     # 6. --- Save Static Image ---
     print(f"Saving static chart to {output_filename}...")
     # fig.savefig(output_filename, dpi=600, bbox_inches='tight')
     fig.savefig("sunburst_hcstvg12_vidvrdstg_gpt4omini_st_class_v1.svg", format='svg', bbox_inches='tight')
     fig.tight_layout()
+    plt.show()
     print("Done.")
-    plt.close(fig) # Close the figure to free memory
+    # plt.close(fig) # Close the figure to free memory
 
-create_sunburst_chart(df, hole_radius=0.2, inner_ring_radius=0.6, outer_ring_radius=1.5)
+create_sunburst_chart(df, hole_radius=0.1, inner_ring_radius=0.6, outer_ring_radius=1.5)
 # %%
 
