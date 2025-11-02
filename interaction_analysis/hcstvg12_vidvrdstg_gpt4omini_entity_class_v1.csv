@@ -1,4 +1,4 @@
-caption,dataset,predicted_category_final
+caption,dataset,category
 "The man in brown clothes pours the contents of the bag into his hand, and then takes out a piece of paper from the bag and opens it.",hcstvg1,2.1 Active Manipulation
 "The girl gets up, is caught by the opposite man, and pushes her to sit down.",hcstvg1,1.2 Competitive
 The man in the white clothes speaks a few words to the woman next to him and turns away.,hcstvg1,1.1 Cooperative
@@ -10,7 +10,7 @@ The man in the white clothes speaks a few words to the woman next to him and tur
 The man picks up the remote control on the table.,hcstvg1,2.1 Active Manipulation
 The man in black clothes sits down by the stool.,hcstvg1,2.2 Proximity
 The man in the suit reaches out and takes what was on the left.,hcstvg1,2.1 Active Manipulation
-"The man in the green clothes walks to the table, picks up the things on the table, speaks a word, then puts down the things and gives the finger to the person in front.",hcstvg1,"1.1 Cooperative (e.g., helping, exchanging)"
+"The man in the green clothes walks to the table, picks up the things on the table, speaks a word, then puts down the things and gives the finger to the person in front.",hcstvg1,1.1 Cooperative
 The woman in the white hat puts her contents in the basket and then takes them out.,hcstvg1,2.1 Active Manipulation
 "The man on the left bows, then puts the cup with the drink on the table",hcstvg1,2.1 Active Manipulation
 "The woman in the purple turban shakes something in her hand, puts it in the woman's bag, and then zipped it.",hcstvg1,2.1 Active Manipulation
@@ -99,7 +99,7 @@ The man in red clothes turns and walks away.,hcstvg1,8.1 No Interaction
 The man in black clothes comes into the door and stops at the table.,hcstvg1,8.1 No Interaction
 The man on the far left walks to the table and kisses the woman,hcstvg1,1.3 Affective
 "The woman looks at the man on the right, then turns and looks up at the man on the left.",hcstvg1,1.5 Observation
-"The man with the gun lowers the gun in his hand, then sits down and reaches over the woman's hand in front of him.",hcstvg1,"1.1 Cooperative (e.g., helping, exchanging)"
+"The man with the gun lowers the gun in his hand, then sits down and reaches over the woman's hand in front of him.",hcstvg1,1.1 Cooperative
 "The man in the green dress turns his head and looks at the man on the left, and then goes forward.",hcstvg1,1.5 Observation
 The man in white clothes gestures with one hand and talks to the opposite person.,hcstvg1,1.1 Cooperative
 The man in the blue stripe takes a sip of the glass.,hcstvg1,2.1 Active Manipulation
@@ -713,7 +713,7 @@ The man in white clothes stands up and walks to the right,hcstvg1,8.1 No Interac
 "The man turns his head, leans to the right, and continues to eat.",hcstvg1,8.1 No Interaction
 The man in black clothes walks to the woman in front then turns around.,hcstvg1,8.1 No Interaction
 "The sits woman picks up the thing on the right and drops it, then stands up.",hcstvg1,2.1 Active Manipulation
-"The sitting little girl gets up from the sofa, walks to the walking man, and pinches his neck.",hcstvg1,"1.1 Cooperative (e.g., helping, exchanging)"
+"The sitting little girl gets up from the sofa, walks to the walking man, and pinches his neck.",hcstvg1,1.1 Cooperative
 The man with yellow hair holds the woman's hand opposite him and bends down.,hcstvg1,1.1 Cooperative
 The man in brown clothes comes to the table.,hcstvg1,8.1 No Interaction
 The man in black clothes touches the little boy's head and runs away.,hcstvg1,3.1 Direct Interaction
@@ -1058,7 +1058,7 @@ The woman without turban hugs another woman with turban and walks away.,hcstvg1,
 The blue-red man raises his hand and carries the woman next to him in a circle and walks away.,hcstvg1,1.1 Cooperative
 The man in gray clothes rubs his hands then turns.,hcstvg1,8.1 No Interaction
 The woman in the red dress turns her head to the right and walks to the man in the hat.,hcstvg1,1.4 Proximity
-"The standing thin man walks behind the sitting woman, beats her head, and then bends down to pick up something on the ground and puts it next to the stove.",hcstvg1,"1.1 Cooperative (e.g., helping, exchanging)"
+"The standing thin man walks behind the sitting woman, beats her head, and then bends down to pick up something on the ground and puts it next to the stove.",hcstvg1,1.1 Cooperative
 The man in blue clothes turns around and walks to the stairs.,hcstvg1,8.1 No Interaction
 The man in the hat takes the little girl to the plate and goes up the stairs.,hcstvg1,1.1 Cooperative
 "The fat man in a suit waves his right hand, nods his head, pulls his left hand out of his pocket, shakes his left hand, and pats the man with the hat on his right shoulder.",hcstvg1,1.1 Cooperative
@@ -2415,7 +2415,7 @@ The woman in black clothes comes to the sitting man and stops.,hcstvg2,1.4 Proxi
 "The man who comes in from the door walks to the chair, sits down and picks up the things on the table.",hcstvg2,2.1 Active Manipulation
 The person in the white turban walks to the person in black and stops.,hcstvg2,1.4 Proximity
 The man in front of the mirror takes care of his hair with both hands and then turns to pick up the clothes on the bed.,hcstvg2,7.1 Self-interaction
-"The lady in blue clothes stands up and speaks to the person in front, then pulls her clothes and walks to the table, finally pushes the man away.",hcstvg2,"1.1 Cooperative (e.g., helping, exchanging)"
+"The lady in blue clothes stands up and speaks to the person in front, then pulls her clothes and walks to the table, finally pushes the man away.",hcstvg2,1.1 Cooperative
 The woman goes to the sofa and sits down.,hcstvg2,2.3 Passive
 The man in brown trousers sits down and then raises Erlang's legs.,hcstvg2,7.1 Self-interaction
 The man in black clothes lifts the person on the ground.,hcstvg2,1.1 Cooperative
@@ -2461,7 +2461,7 @@ The woman in black clothes stands up at the end of the bed at the table in the a
 "The little girl goes to the man and sits on the sofa, looks at him, and looks forward.",hcstvg2,1.5 Observation
 The woman sits on the chair and looks forward.,hcstvg2,2.3 Passive
 The man behind the man with glasses walks behind the sitting man.,hcstvg2,1.4 Proximity
-"The man opens the door and enters the house with the woman, then closes the door and walks to the woman and reaches out and pushs.",hcstvg2,"1.1 Cooperative (e.g., helping, exchanging)"
+"The man opens the door and enters the house with the woman, then closes the door and walks to the woman and reaches out and pushs.",hcstvg2,1.1 Cooperative
 A man in white clothes grabs a woman's arm in a raincoat.,hcstvg2,1.1 Cooperative
 The shirt man straightens up and puts his hands in his pants pockets.,hcstvg2,7.1 Self-interaction
 The man in the hat grabs the collar of the man in yellow and speaks to him.,hcstvg2,1.1 Cooperative
@@ -2726,7 +2726,7 @@ The man in gray clothes walks with one hand on the railing and then stops.,hcstv
 The woman in the purple skirt walks to the left of the sitting person and stops.,hcstvg2,1.4 Proximity
 The long-haired woman takes off her clothes and hands them to the opposite man.,hcstvg2,1.1 Cooperative
 The white skirt woman is pulled up by the man next to her and starts dances.,hcstvg2,1.1 Cooperative
-"The man in the cab of the first car opens the door and gets off , runs to the second car , stops , and hugs the woman",hcstvg2,"1.1 Cooperative (e.g., helping, exchanging)"
+"The man in the cab of the first car opens the door and gets off , runs to the second car , stops , and hugs the woman",hcstvg2,1.1 Cooperative
 "The boy in striped clothes raises his finger forward, then steps back against the door.",hcstvg2,7.1 Self-interaction
 The man in the off-white suit nods his head and turns.,hcstvg2,8.1 No Interaction
 The yellow-haired woman hugs a man's head next to her.,hcstvg2,1.3 Affective
@@ -2902,7 +2902,7 @@ The little boy in the red shirt grabs the man in front and turns to look at him.
 The woman in white clothes pulls the man in green away.,hcstvg2,1.1 Cooperative
 "The man in the red suit reaches out to take over the pot hands by the opposite woman, then pours it down.",hcstvg2,1.1 Cooperative
 The woman with a walking stick step into the woods.,hcstvg2,8.1 No Interaction
-"The sitting little girl gets up from the sofa, walks to the walking man, and pinches his neck.",hcstvg2,"1.1 Cooperative (e.g., helping, exchanging)"
+"The sitting little girl gets up from the sofa, walks to the walking man, and pinches his neck.",hcstvg2,1.1 Cooperative
 "The man with the silver tie closes the door, walks to the car, speaks a few words to the man with the black tie, and sits into the car.",hcstvg2,1.1 Cooperative
 The man on the left of the man in white clothes takes over the thing the man in white clothes handing and takes a bite.,hcstvg2,1.1 Cooperative
 The little girl in a purple dress walks to the man in a suit carring something .,hcstvg2,1.1 Cooperative
