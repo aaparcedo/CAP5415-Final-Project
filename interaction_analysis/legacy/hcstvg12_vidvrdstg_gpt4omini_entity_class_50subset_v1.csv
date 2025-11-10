@@ -1,0 +1,51 @@
+caption,dataset,predicted_category_final
+a child in red leans on a grey sofa at home.,vidstg,2.3 Passive
+there is a dog in black smelling a child in blue outdoor.,vidstg,3.3 Proximity
+The person standing behind the other person,vidvrd,1.4 Proximity
+there is a white dog pushing a white and black dog.,vidstg,4.1 Proximity
+an adult who wears green clothes is in front of an another adult who wears white clothes.,vidstg,1.4 Proximity
+The fox walks to the left of the car,vidvrd,5.2 Proximity
+The man in black clothes goes to the pillar and stops.,hcstvg2,8.1 No Interaction
+"The man holding the shawl hands the shawl to the man in front of him, and puts his hands on his chest with his arms crossed.",hcstvg2,1.1 Cooperative
+The man in the gray suit stoops and takes the spoon and puts something in the cup.,hcstvg1,2.1 Active Manipulation
+The watercraft moves behind the whale,vidvrd,5.2 Proximity
+an adult holds a bottle on a red sofa.,vidstg,2.1 Active Manipulation
+The lion sitting to the right of the other lion,vidvrd,4.1 Proximity
+The red panda plays with the other red panda,vidvrd,4.1 Proximity
+The whale swimming to the right of the other whale,vidvrd,5.2 Proximity
+an adult sitting is in front of a child .,vidstg,2.2 Proximity
+The person rides a bicycle,vidvrd,2.1 Active Manipulation
+there is a stool in front of a sofa.,vidstg,2.2 Proximity
+an adult in red clothes watches another adult in black clothes.,vidstg,1.5 Observation
+The elephant stands to the right of the person,vidvrd,5.2 Proximity
+The man in red clothes walks to the table.,hcstvg2,8.1 No Interaction
+there is a yellow aircraft away from an adult in the snow.,vidstg,2.2 Proximity
+The man in the white clothes takes off the hat and turns around.,hcstvg2,8.1 No Interaction
+The watercraft moves to the right of the whale,vidvrd,5.2 Proximity
+The man in white clothes walks to the stool and stops.,hcstvg2,8.1 No Interaction
+The elephant running beneath the other elephant,vidvrd,4.1 Proximity
+"The man in the car takes two bags and hands them to the man in white clothes, and then takes another two bags to the man in brown.",hcstvg2,1.1 Cooperative
+The zebra standing in front of the other zebra,vidvrd,4.1 Proximity
+the white bird is bitting the black bird.,vidstg,4.2 Antagonistic
+The man in white clothes comes to the man holding the stick.,hcstvg1,1.1 Cooperative
+an adult man in yellow rides a red surfboard on the water.,vidstg,2.1 Active Manipulation
+The person stands in front of the elephant,vidvrd,5.2 Proximity
+the baby in pink is lean on an blue baby seat.,vidstg,2.3 Passive
+The person moves toward the car,vidvrd,2.1 Active Manipulation
+The monkey walking to the left of the other monkey,vidvrd,4.1 Proximity
+The monkey walks to the right of the antelope,vidvrd,5.2 Proximity
+The whale swims to the right of the watercraft,vidvrd,5.2 Proximity
+A man in a vest walks next to a man sitting in a car.,hcstvg1,1.4 Proximity
+The tall man grabs the arm of the low man from behind and pulls him aside.,hcstvg2,1.1 Cooperative
+The man holding the gun puts down his gun and looks inside.,hcstvg2,2.1 Active Manipulation
+"The man in the blue suit walks towards the man in the crimson suit, shakes hands with him, and opens the car door to get in.",hcstvg2,"1.1 Cooperative (e.g., helping, exchanging)"
+The bicycle moves beneath the person,vidvrd,6.2 Proximity
+an adult caresses a white cat on the ground.,vidstg,3.1 Direct Interaction
+The car stops next to the other car,vidvrd,6.2 Proximity
+The red panda standing to the left of the other red panda,vidvrd,4.1 Proximity
+The whale swimming in front of the other whale,vidvrd,4.1 Proximity
+an adult in grey pulls a child on the grass.,vidstg,1.1 Cooperative
+"The short black man pulls out a gun, points at the brown man, and touches his clothes back and forth with the other hand.",hcstvg2,1.2 Competitive
+The cattle standing in front of the other cattle,vidvrd,4.1 Proximity
+man salutes to woman and walks down steps,hcstvg1,1.1 Cooperative
+an adult pushes a baby walker in gray on the floor.,vidstg,2.1 Active Manipulation
