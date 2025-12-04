@@ -39,25 +39,22 @@ Notes:
 import argparse
 import json
 import os
-import re
 import cv2
-import torch
 import numpy as np
 from tqdm import tqdm
 from PIL import Image
-from transformers import AutoModelForCausalLM, LlamaTokenizer, AutoTokenizer, CLIPImageProcessor
 import time
 
 # Local imports
-from datasets import STVGDataLoader
-from utils import (
+from VISTA.datasets import STVGDataLoader
+from VISTA.utils import (
     AverageMeter, 
     Summary, 
     convert_to_python_types, 
     rescale_box_from_1000px, 
     calculate_iou_corners
 )
-from IASEB.models import FerretSingleSample, ShikraSingleSample, CogVLMSingleSample
+from VISTA.models import FerretSingleSample, ShikraSingleSample, CogVLMSingleSample
 
 
 def evaluate_entry(frames_with_gt, entry, runner):
