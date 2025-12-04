@@ -13,17 +13,15 @@ VISTA evaluates VLMs on their ability to perform spatio-temporal grounding—loc
 ## Project Structure
 
 ```
-IASEB/
-├── IASEB/
+CAP5415-Final-Project/
+├── VISTA/
 │   ├── __init__.py          # Package initialization
 │   ├── datasets.py          # Dataset loaders for all supported datasets
 │   ├── utils.py             # Utility functions (IoU calculation, box conversion, etc.)
 │   └── models.py            # Model wrappers for CogVLM, Shikra, and Ferret
-├── shikra/                  # Shikra model submodule
-├── ml-ferret/               # Ferret model submodule
+├── shikra/                  # Shikra model submodule (don't forget to clone)
+├── ml-ferret/               # Ferret model submodule (don't forget to clone)
 ├── run_eval.py              # Main evaluation script
-├── run_eval.slurm           # SLURM job script for single evaluation
-├── run_array.slurm          # SLURM job array script for parallel evaluation
 └── README.md
 ```
 
@@ -140,24 +138,6 @@ python run_eval.py \
     --entry_index 0 \
     --max_iters 2
 ```
-
-### SLURM Cluster Submission
-
-**Single job:**
-```bash
-sbatch run_eval.slurm
-```
-
-**Parallel job array (for large-scale evaluation):**
-```bash
-sbatch run_array.slurm
-```
-
-Edit the SLURM scripts to configure:
-- `MODEL`: Model to evaluate
-- `DATASET`: Dataset to use
-- `TASK`: Task type (referral/freeform)
-- `CHUNK_SIZE`: Number of samples per job (for array jobs)
 
 ## Output Format
 
