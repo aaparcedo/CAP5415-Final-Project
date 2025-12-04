@@ -61,9 +61,9 @@ pip install -e .
 Download the pretrained model weights:
 
 - **CogVLM**: Automatically downloaded from `zai-org/cogvlm-grounding-generalist-hf`
-- **Shikra**: Download from [shikras/shikra-7b](https://huggingface.co/shikras/shikra-7b) and place in `/home/aparcedo/shikra/shikras/shikra-7b`
+- **Shikra**: Download from [shikras/shikra-7b](https://huggingface.co/shikras/shikra-7b) and place in `/CAP5415-Final-Project/shikra/shikras/shikra-7b`
   - Model code: [https://github.com/shikras/shikra/tree/main/mllm](https://github.com/shikras/shikra/tree/main/mllm)
-- **Ferret**: Download from Apple's ML-Ferret repository and place in `/home/aparcedo/IASEB/ml_ferret/ferret-7b-v1-3`
+- **Ferret**: Download from Apple's ML-Ferret repository and place in `/CAP5415-Final-Project/ml_ferret/ferret-7b-v1-3`
   - Model code: [https://github.com/apple/ml-ferret/tree/main/ferret](https://github.com/apple/ml-ferret/tree/main/ferret)
 
 **Note**: Update the paths in `models.py` to match your local setup.
@@ -79,7 +79,7 @@ Download the pretrained model weights:
 | MeViS | freeform | Motion expressions video segmentation |
 | RVOS | freeform | Referring YouTube-VOS |
 
-**Note**: Update dataset paths in `IASEB/datasets.py` to point to your local data directories.
+**Note**: Update dataset paths in `VISTA/datasets.py` to point to your local data directories.
 
 ## Usage
 
